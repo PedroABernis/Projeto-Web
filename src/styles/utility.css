@@ -1,0 +1,35 @@
+.py-base {
+    padding-block: var(--py-base);
+}
+
+.py-lg {
+    padding-block: var(--py-lg);
+}
+
+.py-xl {
+    padding-block: var(--py-xl);
+}
+
+.px-lg {
+    padding-inline: var(--px-lg);
+}
+
+.even-columns {
+    display: grid;
+    gap: 1rem;
+}
+
+.items-center {
+    align-items: center;
+}
+.justify-between {
+    justify-content: space-between;
+}
+
+.flex {
+    display: flex;
+}
+
+.grid {
+    display: grid;
+}
