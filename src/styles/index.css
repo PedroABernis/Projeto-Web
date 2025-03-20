@@ -17,12 +17,12 @@
 /* Alterar a paleta de cores da aplicação */
 
 :root {
-    --bg-color: #FFF;
+    --bg-color: #ffffff;
     --text-color: #252B42;
-    --second-text-color: #737373;
+    --second-text-color: #000000;
     --light-text-color: #FFF;
     --light-gray: #F8F8F8;
-    --primary-color: #23A6F0;
+    --primary-color: #7c0505;
     --secondary-color: #B2E3FF;
 
     --ff-sans: "Montserrat", system-ui, sans-serif;
