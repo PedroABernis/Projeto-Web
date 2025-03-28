@@ -12,18 +12,17 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-/* Reset de maregem dos navegadores */
-
-/* Alterar a paleta de cores da aplicação */
-
 :root {
-    --bg-color: #ffffff;
-    --text-color: #252B42;
-    --second-text-color: #000000;
+    --bg-color: #250d0d;
+    --text-color: #ffffff;
+    --second-text-color: #ffffff;
     --light-text-color: #FFF;
-    --light-gray: #F8F8F8;
-    --primary-color: #7c0505;
-    --secondary-color: #B2E3FF;
+    --light-gray: #250d0d;
+    --primary-color: #770707;
+    --secondary-color: #000000;
+    --login-hover-color:#770707;
+    --p-color: #ffffff;
+
 
     --ff-sans: "Montserrat", system-ui, sans-serif;
     --fw-base: 400;

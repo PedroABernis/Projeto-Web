@@ -1,9 +1,9 @@
 .reverse-color {
-    color: var(--primary-color);
+    color: var(--p-color);
   }
   
   .reverse-color:hover {
-    color: var(--second-text-color);
+    color: var(--login-hover-color);
   }
 
   .ml-lg {
