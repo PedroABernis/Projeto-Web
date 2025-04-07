@@ -27,6 +27,7 @@
     align-self: center;
     margin-bottom: 20%;
 }
+
 @media (width >= 1280px) {
     #hero {
         background: var(--bg-color);
