@@ -1,14 +1,18 @@
 #hero {
     background: var(--light-gray);
-    border-top: 0.125rem solid #ffffff;
+    border-top: 0.125rem solid #ffffff00;
     height: 90vh;
     display: flex;
+    overflow: hidden;
 }
 #hero > img {
     position: absolute;
+    top: 0;
     right: 0;
-    height: 60%;
-    padding-left: 30%;
+    height: 100%;
+    width: auto;
+    max-width: none;
+    z-index: 0;
 }
 #hero p {
     color: var(--p-color);

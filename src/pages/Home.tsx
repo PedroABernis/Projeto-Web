@@ -76,11 +76,11 @@ return (
                 <img src={Menu} alt="ícone menu" width={24} height={24} /> 
             </span>
     }
-    </div> 
-</nav>
+        </div> 
+    </nav>
 
             
-                        </header>
+</header>
 
 <section id="hero">
 <span className="desktop-only">
@@ -101,6 +101,8 @@ return (
     </div>
 </div>
 </section>
+
+
          </>
     )
 }
