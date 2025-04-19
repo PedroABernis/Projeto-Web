@@ -1,0 +1,84 @@
+#foryou {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-block: 4rem;
+    gap: 5.75rem;
+}
+
+#foryou header {
+    display: grid;
+    gap: 1.5rem;
+    text-align: center;
+    max-width: 33rem;
+}
+
+#foryou p {
+    color: var(--second-text-color);
+}
+
+#foryou strong {
+    color: var(--primary-color);
+    font-weight: var(--fw-bold);
+}
+
+#foryou .even-columns {
+    gap: 2rem;
+}
+
+.heading-gap {
+    margin-bottom: 2rem;
+  }
+
+.card {
+    background: #250d0d;
+    box-shadow: rgb(51, 1, 1) 15px 24px 24px;
+    max-width: 20.25rem;
+    min-height: 26rem;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 6px;
+  
+    span {
+      display: flex;
+      min-height: 8rem;
+      align-items: end;
+    }
+  
+    div {
+      height: 60%;
+      gap: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      border: 36px;
+    }
+  }
+  .card h3 {
+    font-size: 1.5rem;
+}
+
+.card p {
+    padding-inline: 1.5rem;
+    color: var(--second-text-color);
+  }
+
+  .card hr {
+    height: 6px;
+    background: var(--secondary-color);
+    width: 100%;
+    border: none;
+  }
+
+  @media (width > 1280px) {
+    #foryou {
+        padding-block: 7.5rem;
+    }
+
+    #foryou header > span > h2 {
+        font-size: var(--fs-sm);
+        color: #ffff;
+    }
+}
