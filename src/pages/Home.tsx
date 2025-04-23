@@ -121,7 +121,7 @@ export default function Home() {
             {" "}
             Olá !
           </p>
-          <h1>
+          <h1 className="text-shadow">
             Espetinhos que ardem <br></br>e cervejas que gelam!
           </h1>
           <p>
