@@ -87,6 +87,7 @@ export default function Home() {
                   <span
                     onClick={() => setShowMobileMenu(!showMobileMenu)}
                     className="btn-wrapper"
+                    style={{ position: "absolute", top: 24, right: 40 }}
                   >
                     <img  
                       src={Close}
@@ -101,6 +102,7 @@ export default function Home() {
               <span
                 onClick={() => setShowMobileMenu(!showMobileMenu)}
                 className="btn-wrapper"
+                style={{ position: "absolute", top: 24, right: 24 }}
               >
                 <img src={Menu} alt="ícone menu" width={24} height={24} />
               </span>
