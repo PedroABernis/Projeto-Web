@@ -344,12 +344,7 @@ export default function Home() {
                 <img src={Star} alt="ícone estrela" width={22} height={20} />
                 <img src={Star} alt="ícone estrela" width={22} height={20} />
                 <img src={Star} alt="ícone estrela" width={22} height={20} />
-                <img
-                  src={StarOuter}
-                  alt="ícone estrela sem fundo"
-                  width={22}
-                  height={20}
-                />
+                <img src={StarOuter} alt="ícone estrela sem fundo" width={22} height={20}/>
               </span>
               <span className="names">
                 <p>Ellon Ma</p>
@@ -370,12 +365,7 @@ export default function Home() {
                 <img src={Star} alt="ícone estrela" width={22} height={20} />
                 <img src={Star} alt="ícone estrela" width={22} height={20} />
                 <img src={Star} alt="ícone estrela" width={22} height={20} />
-                <img
-                  src={StarOuter}
-                  alt="ícone estrela sem fundo"
-                  width={22}
-                  height={20}
-                />
+                <img src={StarOuter} alt="ícone estrela sem fundo" width={22} height={20}/>
               </span>
               <span className="names">
                 <p>Ellon Ma</p>
