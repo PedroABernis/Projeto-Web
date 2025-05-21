@@ -245,10 +245,24 @@ export default function Home() {
               position="Cliente"
             />
             <CarouselCard
+              testimony="O Galpão é o lugar perfeito pra quem ama comida boa e um clima descontraído. Os espetos são de dar água na boca e as porções são generosas. Recomendo!"
+              profileImg={ProfileImageOne}
+              rating={5}
+              name="Lucas Oliveira"
+              position="Cliente"
+            />
+            <CarouselCard
               testimony="A experiência no Galpão é incrível! A música ao vivo dá um toque especial e a comida é de primeira. Não tem como não amar!"
               profileImg={ProfileImageOne}
               rating={5}
               name="Ana Paula"
+              position="Cliente"
+            />
+            <CarouselCard
+              testimony="O Galpão é o lugar perfeito pra quem ama comida boa e um clima descontraído. Os espetos são de dar água na boca e as porções são generosas. Recomendo!"
+              profileImg={ProfileImageOne}
+              rating={5}
+              name="Lucas Oliveira"
               position="Cliente"
             />
             <CarouselCard
