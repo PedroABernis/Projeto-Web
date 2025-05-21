@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Logo from "../assets/logo.svg";
 import Button from "../components/Button";
-import Card from "../components/Card";
+import FunctionCard from "../components/FunctionCard";
 import "../styles/header.css";
 import "../styles/utility.css";
 import Close from "../assets/icons/close.svg";
@@ -12,11 +12,9 @@ import Porçao from "../assets/icons/Porções.svg";
 import Drink from "../assets/icons/Drinks.svg";
 import AoVivo from "../assets/icons/Show ao vivo.svg";
 import "../styles/hero.css";
-import "../styles/foryou.css";
 import ProfileImageOne from "../assets/icons/Profile Icon.svg";
-import Star from "../assets/icons/StarRate.svg";
-import StarOuter from "../assets/icons/Star.svg";
-import "../styles/testimonials.css";
+import CarouselCard from "../components/CarouselCard";
+
 
 export default function Home() {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
@@ -185,27 +183,21 @@ export default function Home() {
           </p>
         </header>
         <section className="even-columns">
-          <div className="card">
-            <Card
+            <FunctionCard
               icon={Porçao}
               title="Porções e Espetos"
               description="Nossas porções são generosas e os espetos saem direto da brasa, sempre no ponto certo. Perfeitos pra dividir com a galera ou encarar sozinho."
             />
-          </div>
-          <div className="card">
-            <Card
+            <FunctionCard
               icon={Drink}
               title="Bebidas pra Todos os Gostos"
               description="Do chopp gelado às caipirinhas e drinks variados, a gente tem de tudo pra acompanhar seu rolê com estilo e sabor."
             />
-          </div>
-          <div className="card">
-            <Card
+            <FunctionCard
               icon={AoVivo}
               title="Música Ao Vivo & Clima de Galera"
               description="Aqui tem som bom direto do palco, ambiente acolhedor e aquela vibe perfeita pra curtir com os amigos — do início ao fim."
             />
-          </div>
         </section>
       </section>
 
@@ -224,155 +216,49 @@ export default function Home() {
 
         <section className="carousel">
           <div className="carousel-content">
-            <div className="carousel-card">
-              <img src={ProfileImageOne} alt="Imagem perfil cliente" />
-              <span className="testimony">
-                <p>
-                  Certamente o mercado chinês de eletricos está bombando, só
-                  existe uma coisa melhor do que isso, provar uma boa comida
-                  DonaFrost no almoço.
-                </p>
-              </span>
-              <span className="rating">
-                <img src={Star} alt="ícone estrela" width={22} height={20} />
-                <img src={Star} alt="ícone estrela" width={22} height={20} />
-                <img src={Star} alt="ícone estrela" width={22} height={20} />
-                <img src={Star} alt="ícone estrela" width={22} height={20} />
-                <img
-                  src={StarOuter}
-                  alt="ícone estrela sem fundo"
-                  width={22}
-                  height={20}
-                />
-              </span>
-              <span className="names">
-                <p>Ellon Ma</p>
-                <p>CEO BING CHILLING</p>
-              </span>
-            </div>
-            <div className="carousel-card">
-              <img src={ProfileImageOne} alt="Imagem perfil cliente" />
-              <span className="testimony">
-                <p>
-                  Certamente o mercado chinês de eletricos está bombando, só
-                  existe uma coisa melhor do que isso, provar uma boa comida
-                  DonaFrost no almoço.
-                </p>
-              </span>
-              <span className="rating">
-                <img src={Star} alt="ícone estrela" width={22} height={20} />
-                <img src={Star} alt="ícone estrela" width={22} height={20} />
-                <img src={Star} alt="ícone estrela" width={22} height={20} />
-                <img src={Star} alt="ícone estrela" width={22} height={20} />
-                <img
-                  src={StarOuter}
-                  alt="ícone estrela sem fundo"
-                  width={22}
-                  height={20}
-                />
-              </span>
-              <span className="names">
-                <p>Ellon Ma</p>
-                <p>CEO BING CHILLING</p>
-              </span>
-            </div>
-            <div className="carousel-card">
-              <img src={ProfileImageOne} alt="Imagem perfil cliente" />
-              <span className="testimony">
-                <p>
-                  Certamente o mercado chinês de eletricos está bombando, só
-                  existe uma coisa melhor do que isso, provar uma boa comida
-                  DonaFrost no almoço.
-                </p>
-              </span>
-              <span className="rating">
-                <img src={Star} alt="ícone estrela" width={22} height={20} />
-                <img src={Star} alt="ícone estrela" width={22} height={20} />
-                <img src={Star} alt="ícone estrela" width={22} height={20} />
-                <img src={Star} alt="ícone estrela" width={22} height={20} />
-                <img
-                  src={StarOuter}
-                  alt="ícone estrela sem fundo"
-                  width={22}
-                  height={20}
-                />
-              </span>
-              <span className="names">
-                <p>Ellon Ma</p>
-                <p>CEO BING CHILLING</p>
-              </span>
-            </div>
+          <CarouselCard
+              testimony="O Galpão é o lugar perfeito pra quem ama comida boa e um clima descontraído. Os espetos são de dar água na boca e as porções são generosas. Recomendo!"
+              profileImg={ProfileImageOne}
+              rating={5}
+              name="Lucas Oliveira"
+              position="Cliente"
+            />
+            <CarouselCard
+              testimony="A experiência no Galpão é incrível! A música ao vivo dá um toque especial e a comida é de primeira. Não tem como não amar!"
+              profileImg={ProfileImageOne}
+              rating={5}
+              name="Ana Paula"
+              position="Cliente"
+            />
+            <CarouselCard
+              testimony="O Galpão é o lugar perfeito pra quem ama comida boa e um clima descontraído. Os espetos são de dar água na boca e as porções são generosas. Recomendo!"
+              profileImg={ProfileImageOne}
+              rating={5}
+              name="Lucas Oliveira"
+              position="Cliente"
+            />
+            <CarouselCard
+              testimony="A experiência no Galpão é incrível! A música ao vivo dá um toque especial e a comida é de primeira. Não tem como não amar!"
+              profileImg={ProfileImageOne}
+              rating={5}
+              name="Ana Paula"
+              position="Cliente"
+            />
+            <CarouselCard
+              testimony="A experiência no Galpão é incrível! A música ao vivo dá um toque especial e a comida é de primeira. Não tem como não amar!"
+              profileImg={ProfileImageOne}
+              rating={5}
+              name="Ana Paula"
+              position="Cliente"
+            />
+            <CarouselCard
+              testimony="A experiência no Galpão é incrível! A música ao vivo dá um toque especial e a comida é de primeira. Não tem como não amar!"
+              profileImg={ProfileImageOne}
+              rating={5}
+              name="Ana Paula"
+              position="Cliente"
+            />
           </div>
-          <div className="carousel-content">
-            <div className="carousel-card">
-              <img src={ProfileImageOne} alt="Imagem perfil cliente" />
-              <span className="testimony">
-                <p>
-                  Certamente o mercado chinês de eletricos está bombando, só
-                  existe uma coisa melhor do que isso, provar uma boa comida
-                  DonaFrost no almoço.
-                </p>
-              </span>
-              <span className="rating">
-                <img src={Star} alt="ícone estrela" width={22} height={20} />
-                <img src={Star} alt="ícone estrela" width={22} height={20} />
-                <img src={Star} alt="ícone estrela" width={22} height={20} />
-                <img src={Star} alt="ícone estrela" width={22} height={20} />
-                <img
-                  src={StarOuter}
-                  alt="ícone estrela sem fundo"
-                  width={22}
-                  height={20}
-                />
-              </span>
-              <span className="names">
-                <p>Ellon Ma</p>
-                <p>CEO BING CHILLING</p>
-              </span>
-            </div>
-            <div className="carousel-card">
-              <img src={ProfileImageOne} alt="Imagem perfil cliente" />
-              <span className="testimony">
-                <p>
-                  Certamente o mercado chinês de eletricos está bombando, só
-                  existe uma coisa melhor do que isso, provar uma boa comida
-                  DonaFrost no almoço.
-                </p>
-              </span>
-              <span className="rating">
-                <img src={Star} alt="ícone estrela" width={22} height={20} />
-                <img src={Star} alt="ícone estrela" width={22} height={20} />
-                <img src={Star} alt="ícone estrela" width={22} height={20} />
-                <img src={Star} alt="ícone estrela" width={22} height={20} />
-                <img src={StarOuter} alt="ícone estrela sem fundo" width={22} height={20}/>
-              </span>
-              <span className="names">
-                <p>Ellon Ma</p>
-                <p>CEO BING CHILLING</p>
-              </span>
-            </div>
-            <div className="carousel-card">
-              <img src={ProfileImageOne} alt="Imagem perfil cliente" />
-              <span className="testimony">
-                <p>
-                  Certamente o mercado chinês de eletricos está bombando, só
-                  existe uma coisa melhor do que isso, provar uma boa comida
-                  DonaFrost no almoço.
-                </p>
-              </span>
-              <span className="rating">
-                <img src={Star} alt="ícone estrela" width={22} height={20} />
-                <img src={Star} alt="ícone estrela" width={22} height={20} />
-                <img src={Star} alt="ícone estrela" width={22} height={20} />
-                <img src={Star} alt="ícone estrela" width={22} height={20} />
-                <img src={StarOuter} alt="ícone estrela sem fundo" width={22} height={20}/>
-              </span>
-              <span className="names">
-                <p>Ellon Ma</p>
-                <p>CEO BING CHILLING</p>
-              </span>
-            </div>
-        </div>
         </section>
       </section>
     </>
