@@ -11,8 +11,11 @@ import HeroRectangleTwo from "../assets/images/rectangleTwo.png";
 import Porçao from "../assets/icons/Porções.svg";
 import Drink from "../assets/icons/Drinks.svg";
 import AoVivo from "../assets/icons/Show ao vivo.svg";
+import Caipirinha from "../assets/icons/Caipirinha em Dobro.svg";
 import "../styles/hero.css";
 import ProfileImageOne from "../assets/icons/Profile Icon.svg";
+import ProfileTwo from "../assets/icons/Profile Two.svg";
+import ProfileThree from "../assets/icons/Profile Three.svg";
 import CarouselCard from "../components/CarouselCard";
 
 
@@ -198,6 +201,11 @@ export default function Home() {
               title="Música Ao Vivo & Clima de Galera"
               description="Aqui tem som bom direto do palco, ambiente acolhedor e aquela vibe perfeita pra curtir com os amigos — do início ao fim."
             />
+            <FunctionCard
+              icon={Caipirinha}
+              title="Sexta da Caipirinha em Dobro"
+              description="Sexta no Galpão é assim: prosa boa e caipirinha em dobro pra esquentar o coração e refrescar a alma!"
+            />
         </section>
       </section>
 
@@ -220,58 +228,52 @@ export default function Home() {
               testimony="O Galpão é o lugar perfeito pra quem ama comida boa e um clima descontraído. Os espetos são de dar água na boca e as porções são generosas. Recomendo!"
               profileImg={ProfileImageOne}
               rating={5}
-              name="Lucas Oliveira"
-              position="Cliente"
+              name="Fábio D'alecio "
+              position="Prefeito de Ubiratã"
             />
             <CarouselCard
-              testimony="A experiência no Galpão é incrível! A música ao vivo dá um toque especial e a comida é de primeira. Não tem como não amar!"
-              profileImg={ProfileImageOne}
+              testimony="Trabalho todos os dias para garantir um ambiente acolhedor, comida de qualidade e atendimento que faz você se sentir em casa. Nosso maior prazer é ver nossos clientes satisfeitos e felizes a cada visita."
+              profileImg={ProfileTwo}
               rating={5}
-              name="Ana Paula"
-              position="Cliente"
+              name="Leandro H. Santiago "
+              position=" Proprietário do Galpão"
             />
             <CarouselCard
-              testimony="O Galpão é o lugar perfeito pra quem ama comida boa e um clima descontraído. Os espetos são de dar água na boca e as porções são generosas. Recomendo!"
-              profileImg={ProfileImageOne}
-              rating={5}
-              name="Lucas Oliveira"
-              position="Cliente"
-            />
-            <CarouselCard
-              testimony="A experiência no Galpão é incrível! A música ao vivo dá um toque especial e a comida é de primeira. Não tem como não amar!"
-              profileImg={ProfileImageOne}
-              rating={5}
-              name="Ana Paula"
-              position="Cliente"
+              testimony="Tocar aqui é sempre uma experiência incrível! A energia do público e o clima do lugar são únicos, criando a vibe perfeita para a festa. Adoro fazer parte dessa história e animar a galera com som de qualidade"
+              profileImg={ProfileThree}
+              rating={4}
+              name="André Gabiroba"
+              position="DJ e Músico"
             />
             <CarouselCard
               testimony="O Galpão é o lugar perfeito pra quem ama comida boa e um clima descontraído. Os espetos são de dar água na boca e as porções são generosas. Recomendo!"
               profileImg={ProfileImageOne}
               rating={5}
-              name="Lucas Oliveira"
-              position="Cliente"
+              name="Fábio D'alecio "
+              position="Prefeito de Ubiratã"
             />
             <CarouselCard
-              testimony="A experiência no Galpão é incrível! A música ao vivo dá um toque especial e a comida é de primeira. Não tem como não amar!"
-              profileImg={ProfileImageOne}
+              testimony="Trabalho todos os dias para garantir um ambiente acolhedor, comida de qualidade e atendimento que faz você se sentir em casa. Nosso maior prazer é ver nossos clientes satisfeitos e felizes a cada visita."
+              profileImg={ProfileTwo}
               rating={5}
-              name="Ana Paula"
-              position="Cliente"
+              name="Leandro H. Santiago "
+              position=" Proprietário do Galpão"
+            />
+            <CarouselCard
+              testimony="Tocar aqui é sempre uma experiência incrível! A energia do público e o clima do lugar são únicos, criando a vibe perfeita para a festa. Adoro fazer parte dessa história e animar a galera com som de qualidade"
+              profileImg={ProfileThree}
+              rating={4}
+              name="André Gabiroba"
+              position="DJ e Músico"
             />
             <CarouselCard
               testimony="O Galpão é o lugar perfeito pra quem ama comida boa e um clima descontraído. Os espetos são de dar água na boca e as porções são generosas. Recomendo!"
               profileImg={ProfileImageOne}
               rating={5}
-              name="Lucas Oliveira"
-              position="Cliente"
+              name="Fábio D'alecio "
+              position="Prefeito de Ubiratã"
             />
-            <CarouselCard
-              testimony="A experiência no Galpão é incrível! A música ao vivo dá um toque especial e a comida é de primeira. Não tem como não amar!"
-              profileImg={ProfileImageOne}
-              rating={5}
-              name="Ana Paula"
-              position="Cliente"
-            />
+          
           </div>
         </section>
       </section>

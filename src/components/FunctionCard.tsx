@@ -10,7 +10,7 @@ export default function IFunctionCard(props: IFunctionCard) {
   return (
     <section className="even-columns">
       <div className="card">
-          <img src={props.icon} alt={`ícone ${props.title}`} width={280} height={120
+          <img src={props.icon} alt={`ícone ${props.title}`} width={324} height={230
         } />
         <div>
           <h3>{props.title}</h3>
