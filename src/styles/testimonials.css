@@ -1,98 +1,89 @@
 #testimonials {
   height: 100vh;
-  background: #250d0d;
+  background: var(--bg-color);
   display: flex;
   flex-direction: column;
   padding-block: 4rem;
   gap: 2rem;
-  align-items: center;
-}
 
-#testimonials header {
+ header {
   display: flex;
   text-align: center;
   flex-direction: column;
   gap: 1.5rem;
   padding-inline: 2rem;
   align-items: center;
-}
+} 
 
-#testimonials header :first-child {
+  header :first-child {
   color: var(--primary-color);
   font-weight: var(--fw-bold);
 }
 
-#testimonials p {
+p {
   color: var(--second-text-color);
 }
 
-#testimonials .carousel {
+.carousel {
   display: flex;
   width: 80%;
-  overflow-y: hidden;
 }
 
-#testimonials .carousel:hover .carousel-content {
-  animation-play-state: paused;
-  cursor: pointer;
+.carousel:hover {
+  .carousel-content {
+    animation-play-state: paused;
+    cursor: pointer;
+  }
 }
 
-#testimonials .carousel-content {
+.carousel-content {
   display: flex;
   gap: 1.5rem;
   padding-right: 1.5rem;
   animation: swipe 30000ms linear infinite;
-  box-sizing: border-box;
 }
 
-#testimonials .carousel-card {
+.carousel-card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-width: 10 rem;
-  background: #250d0d;
+  min-width: 12.5rem;
+  background: var(--bg-color);
   border-radius: 0.375rem;
   padding: 1.625rem;
   text-align: center;
   gap: 1rem;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  z-index: 1;
-}
 
-#testimonials .carousel-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 30px rgba(187, 4, 4, 0.3);
-  z-index: 10;
-}
-
-#testimonials .carousel-card > img {
+> img {
   width: 130px;
   height: 130px;
   border-radius: 50%;
 }
 
-#testimonials .carousel-card .rating {
+.rating {
   display: flex;
   margin-top: auto;
 }
 
-#testimonials .carousel-card .names {
-  font-size: var(--fs-sm);
-  font-weight: var(--fw-bold);
-}
+	.names {
+	  font-size: var(--fs-sm);
+	  font-weight: var(--fw-bold);
+	}
+	
+	.names :first-child {
+	  color: var(--text-color);
+	  font-size: var(--fs-base);
+	}
 
-#testimonials .carousel-card .names :first-child {
-  color: var(--text-color);
-  font-size: var(--fs-base);
+}
 }
 
 @keyframes swipe {
   0% {
     transform: translateX(0);
   }
-
   100% {
-    transform: translateX(-50%);
+    transform: translateX(-100%);
   }
 }
 
@@ -100,23 +91,23 @@
   #testimonials {
     gap: 5rem;
     align-items: center;
-  }
 
-  #testimonials header p {
-    width: 60%;
-  }
+    header p {
+      width: 60%;
+    }
 
-  #testimonials .carousel {
-    overflow-x: hidden;
-    width: 50%;
-  }
+    .carousel {
+      overflow-x: hidden;
+      width: 50%;
+    }
 
-  #testimonials .testimony {
-    width: 80%;
-  }
+    .testimony {
+      width: 80%;
+    }
 
-  #testimonials .carousel-card {
-    min-width: 30rem;
-    min-height: 26.875rem;
+    .carousel-card {
+      min-width: 30rem;
+      min-height: 26.875rem;
+    }
   }
 }

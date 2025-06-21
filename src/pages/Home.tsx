@@ -17,6 +17,7 @@ import ProfileImageOne from "../assets/icons/Profile Icon.svg";
 import ProfileTwo from "../assets/icons/Profile Two.svg";
 import ProfileThree from "../assets/icons/Profile Three.svg";
 import CarouselCard from "../components/CarouselCard";
+import ProductCard from "../components/ProductCard";
 
 
 export default function Home() {
@@ -277,6 +278,78 @@ export default function Home() {
           </div>
         </section>
       </section>
+      
+    <section id="pricing" className="container">
+    <header>
+        <p className="desktop-only">Catálogo de Produtos</p>
+        <h2>Nossos produtos</h2>
+    </header>
+    <div className="product-catalog">
+      <ProductCard
+      image={Porçao}
+      imgAlt="Porção de Espetos"
+      title="Porção de Espetos"
+      description="Espetos variados, direto da brasa, acompanhados de farofa e vinagrete."
+      price="R$ 39,90"
+      />
+      <ProductCard
+      image={Drink}
+      imgAlt="Caipirinha"
+      title="Caipirinha"
+      description="Caipirinha tradicional, feita na hora, perfeita para refrescar seu rolê."
+      price="R$ 14,90"
+      />
+      <ProductCard
+      image={AoVivo}
+      imgAlt="Chopp Gelado"
+      title="Chopp Gelado"
+      description="Chopp servido na temperatura ideal, cremoso e refrescante."
+      price="R$ 9,90"
+      />
+      <ProductCard
+      image={Caipirinha}
+      imgAlt="Caipirinha em Dobro"
+      title="Caipirinha em Dobro"
+      description="Sexta-feira especial: peça uma caipirinha e ganhe outra. Promoção válida toda sexta!"
+      price="R$ 19,90"            
+      />
+      <ProductCard
+      image={Porçao}
+      imgAlt="Porção de Batata Frita"
+      title="Porção de Batata Frita"
+      description="Batata frita crocante, perfeita para acompanhar seus espetos e bebidas."
+      price="R$ 24,90"
+      />
+      <ProductCard
+      image={Drink}
+      imgAlt="Drink Especial"
+      title="Drink Especial"
+      description="Drinks exclusivos preparados pelo nosso bartender para surpreender seu paladar."
+      price="R$ 21,90"
+      />
+      <ProductCard
+      image={AoVivo}
+      imgAlt="Combo Galera"
+      title="Combo Galera"
+      description="Porção de espetos, batata frita e 4 chopps gelados para compartilhar com os amigos."
+      price="R$ 89,90"
+      />
+      <ProductCard
+      image={AoVivo}
+      imgAlt="Combo Galera"
+      title="Combo Galera"
+      description="Porção de espetos, batata frita e 4 chopps gelados para compartilhar com os amigos."
+      price="R$ 89,90"
+      />
+      <ProductCard
+      image={AoVivo}
+      imgAlt="Combo Galera"
+      title="Combo Galera"
+      description="Porção de espetos, batata frita e 4 chopps gelados para compartilhar com os amigos."
+      price="R$ 89,90"
+      />
+    </div>
+    </section>
     </>
   );
 }

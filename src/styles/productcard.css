@@ -1,0 +1,38 @@
+/* Estilização da seção de catálogo */
+#pricing.container {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#pricing header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+#pricing header p.desktop-only {
+  font-size: 1rem;
+  color: #ffffff;
+  margin: 0;
+}
+
+#pricing header h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 8px 0;
+  color: #770707;
+}
+
+/* Grade de produtos */
+.product-catalog {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+/* Responsividade extra */
+@media (max-width: 768px) {
+  #pricing header h2 {
+    font-size: 1.6rem;
+  }
+}
