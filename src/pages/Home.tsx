@@ -12,7 +12,15 @@ import Porçao from "../assets/icons/Porções.svg";
 import Drink from "../assets/icons/Drinks.svg";
 import AoVivo from "../assets/icons/Show ao vivo.svg";
 import Caipirinha from "../assets/icons/Caipirinha em Dobro.svg";
+import Batata from "../assets/icons/Porção de batata.svg";
+import Espetinhos from "../assets/icons/Espetinhos.svg";
+import Kibe from "../assets/icons/Kibe.svg";
+import Feijoada from "../assets/icons/Feijoada.svg";
+import PaoCostela from "../assets/icons/Pao Costela.svg";
+import Peixe from "../assets/icons/Peixe.svg";
+import Choop from "../assets/icons/Choop.svg";
 import "../styles/hero.css";
+import "../styles/contact.css";
 import ProfileImageOne from "../assets/icons/Profile Icon.svg";
 import ProfileTwo from "../assets/icons/Profile Two.svg";
 import ProfileThree from "../assets/icons/Profile Three.svg";
@@ -279,7 +287,7 @@ export default function Home() {
         </section>
       </section>
       
-    <section id="pricing" className="container">
+      <section id="pricing" className="container">
     <header>
         <p className="desktop-only">Catálogo de Produtos</p>
         <h2>Nossos produtos</h2>
@@ -289,67 +297,83 @@ export default function Home() {
       image={Porçao}
       imgAlt="Porção de Espetos"
       title="Porção de Espetos"
-      description="Espetos variados, direto da brasa, acompanhados de farofa e vinagrete."
-      price="R$ 39,90"
+      description="4 Espetinhos de sua escolha acompanhados de farofa e vinagrete."
+      price="R$ 38,00"
       />
       <ProductCard
       image={Drink}
       imgAlt="Caipirinha"
       title="Caipirinha"
-      description="Caipirinha tradicional, feita na hora, perfeita para refrescar seu rolê."
-      price="R$ 14,90"
+      description="Caipirinha tradicional e de vários sabores feita na hora, perfeita para refrescar seu rolê."
+      price="R$ 20,00"
       />
       <ProductCard
-      image={AoVivo}
-      imgAlt="Chopp Gelado"
-      title="Chopp Gelado"
-      description="Chopp servido na temperatura ideal, cremoso e refrescante."
-      price="R$ 9,90"
-      />
-      <ProductCard
-      image={Caipirinha}
-      imgAlt="Caipirinha em Dobro"
-      title="Caipirinha em Dobro"
-      description="Sexta-feira especial: peça uma caipirinha e ganhe outra. Promoção válida toda sexta!"
-      price="R$ 19,90"            
-      />
-      <ProductCard
-      image={Porçao}
+      image={Batata}
       imgAlt="Porção de Batata Frita"
       title="Porção de Batata Frita"
-      description="Batata frita crocante, perfeita para acompanhar seus espetos e bebidas."
-      price="R$ 24,90"
+      description="Porção generosa de batata frita crocante, ideal para acompanhar seus espetos e bebidas."
+      price="R$ 25,00"
       />
       <ProductCard
-      image={Drink}
-      imgAlt="Drink Especial"
-      title="Drink Especial"
-      description="Drinks exclusivos preparados pelo nosso bartender para surpreender seu paladar."
-      price="R$ 21,90"
+      image={Espetinhos}
+      imgAlt="Espetinhos Variados"
+      title="Espetinhos Variados"
+      description="Diversos sabores de espetinhos, feitos na hora com ingredientes frescos e de qualidade."
+      price="R$ 8,00 a R$ 10,00"            
       />
       <ProductCard
-      image={AoVivo}
-      imgAlt="Combo Galera"
-      title="Combo Galera"
-      description="Porção de espetos, batata frita e 4 chopps gelados para compartilhar com os amigos."
-      price="R$ 89,90"
+      image={Kibe}
+      imgAlt="Porção de Kibe"
+      title="Porção de Kibe"
+      description="Porção de kibe frito, uma opção deliciosa e crocrante."
+      price="R$ 28,00"
       />
       <ProductCard
-      image={AoVivo}
-      imgAlt="Combo Galera"
-      title="Combo Galera"
-      description="Porção de espetos, batata frita e 4 chopps gelados para compartilhar com os amigos."
-      price="R$ 89,90"
+      image={Feijoada}
+      imgAlt="Feijoada"
+      title="Porção de Feijoada"
+      description="Feijoada completa com farofa, couve e muito mais."
+      price="R$ 25,00"
       />
       <ProductCard
-      image={AoVivo}
-      imgAlt="Combo Galera"
-      title="Combo Galera"
-      description="Porção de espetos, batata frita e 4 chopps gelados para compartilhar com os amigos."
-      price="R$ 89,90"
+      image={PaoCostela}
+      imgAlt="Pão de Costela"
+      title="Pao de Costela"
+      description="Pão recheado com costela desfiada, uma explosão de sabor em cada mordida."
+      price="R$ 15,00"
+      />
+      <ProductCard
+      image={Choop}
+      imgAlt="Choop"
+      title="Choop Gelado"
+      description="Chopp gelado, perfeito para acompanhar sua refeição."
+      price="R$ 9,00"
+      />
+      <ProductCard
+      image={Peixe}
+      imgAlt="Peixe"
+      title="Porção de Peixe"
+      description="Porção de peixe crocante, uma opção deliciosa e leve para acompanhar sua bebida."
+      price="R$ 65,00"
       />
     </div>
-    </section>
+      </section>
+
+      <section id="contact" className="container">
+        <header>
+          <h2>Entre em contato</h2>
+          <p>
+            Tem alguma dúvida, sugestão ou só quer trocar uma ideia? Manda uma
+            mensagem pra gente! Estamos aqui pra ouvir você e fazer do Galpão
+            ainda melhor.
+          </p>
+        </header>
+        <form className="contact-form">
+          <input type="email" placeholder="Seu e-mail" required />
+            <input type="text" placeholder="Sua mensagem" required />
+          <Button text="Enviar Mensagem" />
+        </form>
+      </section>
     </>
   );
 }

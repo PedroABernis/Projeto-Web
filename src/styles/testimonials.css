@@ -16,12 +16,12 @@
 } 
 
   header :first-child {
-  color: var(--primary-color);
+  color:  #ffffff;
   font-weight: var(--fw-bold);
 }
 
 p {
-  color: var(--second-text-color);
+  color: #ffffff;
 }
 
 .carousel {

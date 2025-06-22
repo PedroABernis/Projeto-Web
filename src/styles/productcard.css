@@ -1,4 +1,4 @@
-/* Estilização da seção de catálogo */
+
 #pricing.container {
   padding: 40px 20px;
   max-width: 1200px;
@@ -20,17 +20,40 @@
   font-size: 2rem;
   font-weight: 700;
   margin: 8px 0;
-  color: #770707;
+  color: #ffffff;
 }
 
-/* Grade de produtos */
+#pricing p {
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin: 0;
+}
+
 .product-catalog {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 24px;
 }
 
-/* Responsividade extra */
+.product-card {
+  background-color: var(--bg-color);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(255, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  width: 300px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+
 @media (max-width: 768px) {
   #pricing header h2 {
     font-size: 1.6rem;

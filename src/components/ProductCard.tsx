@@ -1,4 +1,5 @@
 import React from 'react';
+import "../styles/productcard.css"; 
 
 type ProductCardProps = {
     image: string;
@@ -18,7 +19,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
     description,
   
 }) => (
-    <div>
+    <div className='product-card'>
         <img
             src={image}
             alt={imgAlt || title}
