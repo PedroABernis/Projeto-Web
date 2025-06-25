@@ -53,7 +53,7 @@ export default function Home() {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
-            "Authorization": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjFiYjc3NGJkODcyOWVhMzhlOWMyZmUwYzY0ZDJjYTk0OGJmNjZmMGYiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwiYXpwIjoiNjE4MTA0NzA4MDU0LTlyOXMxYzRhbGczNmVybGl1Y2hvOXQ1Mm4zMm42ZGdxLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwiYXVkIjoiNjE4MTA0NzA4MDU0LTlyOXMxYzRhbGczNmVybGl1Y2hvOXQ1Mm4zMm42ZGdxLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTA5NTY5NTEyODc5NzY1NzA5Nzc5IiwiZW1haWwiOiJwZWRyb2FiZXJuaXNAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJLazk1VXh2NDJiMlMyX29GMnRvTmdRIiwibmJmIjoxNzUwODA1ODk4LCJpYXQiOjE3NTA4MDYxOTgsImV4cCI6MTc1MDgwOTc5OCwianRpIjoiZjIyMTk5NWZjMmU5MzczZjdiNGJmMjU1ZjIxMGY0MDNhMzA1OGZjNyJ9.N9p87FyDoV7ZvttXSWTmTcUQclmXDhyLrYD6oLoLYFpvSwbNFECw9LfT2tsC9dtpfnZebh0ZKdfKf61nIRxRfg7AoE3MUx3RXEnR3BVsBSSj9o1YK3Mj6eBJDbO8d96dSvzyVgqXWK0J79SMtyzaVsncy0Cev1O7M6z7NKmbB-CMTsZfP6xBUywN-LJ5Ehm6KHWpzlM44fBqi3wkzZNpFPxzyNTAvQi39sGR4rjAaBL1BJrAZtegynODkJM96nd4zEQQiEk_VbKFuBJheEY8mA4OUJcltGio3NOyL-meMbCwyEBRHNlSsbRXORHRhJhV59z7v-ij6tFyWTe_SgKwzg",
+            "Authorization": "Bearer ",
           },
           body: JSON.stringify({
             to_email: email,
