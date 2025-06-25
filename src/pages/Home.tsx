@@ -4,6 +4,7 @@ import Button from "../components/Button";
 import FunctionCard from "../components/FunctionCard";
 import "../styles/header.css";
 import "../styles/utility.css";
+import "../styles/footer.css"
 import Close from "../assets/icons/close.svg";
 import Menu from "../assets/icons/hamburguer.svg";
 import HeroRectangleOne from "../assets/images/rectangleOne.png";
@@ -26,6 +27,7 @@ import ProfileTwo from "../assets/icons/Profile Two.svg";
 import ProfileThree from "../assets/icons/Profile Three.svg";
 import CarouselCard from "../components/CarouselCard";
 import ProductCard from "../components/ProductCard";
+import Instagram from "../assets/icons/instagram.png";
 
 
 export default function Home() {
@@ -36,6 +38,43 @@ export default function Home() {
       html.style.overflow = showMobileMenu ? "hidden" : "auto";
     }
   }, [showMobileMenu]);
+
+  const [email, setEmail] = useState("");
+  const [mensagem, setMensagem] = useState("");
+  const [feedback, setFeedback] = useState("");
+
+  const handleSubmit = async (e: { preventDefault: () => void; }) => {
+    e.preventDefault();
+
+    try {
+      const response = await fetch(
+        "/api", 
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "Authorization": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjFiYjc3NGJkODcyOWVhMzhlOWMyZmUwYzY0ZDJjYTk0OGJmNjZmMGYiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwiYXpwIjoiNjE4MTA0NzA4MDU0LTlyOXMxYzRhbGczNmVybGl1Y2hvOXQ1Mm4zMm42ZGdxLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwiYXVkIjoiNjE4MTA0NzA4MDU0LTlyOXMxYzRhbGczNmVybGl1Y2hvOXQ1Mm4zMm42ZGdxLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTA5NTY5NTEyODc5NzY1NzA5Nzc5IiwiZW1haWwiOiJwZWRyb2FiZXJuaXNAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJLazk1VXh2NDJiMlMyX29GMnRvTmdRIiwibmJmIjoxNzUwODA1ODk4LCJpYXQiOjE3NTA4MDYxOTgsImV4cCI6MTc1MDgwOTc5OCwianRpIjoiZjIyMTk5NWZjMmU5MzczZjdiNGJmMjU1ZjIxMGY0MDNhMzA1OGZjNyJ9.N9p87FyDoV7ZvttXSWTmTcUQclmXDhyLrYD6oLoLYFpvSwbNFECw9LfT2tsC9dtpfnZebh0ZKdfKf61nIRxRfg7AoE3MUx3RXEnR3BVsBSSj9o1YK3Mj6eBJDbO8d96dSvzyVgqXWK0J79SMtyzaVsncy0Cev1O7M6z7NKmbB-CMTsZfP6xBUywN-LJ5Ehm6KHWpzlM44fBqi3wkzZNpFPxzyNTAvQi39sGR4rjAaBL1BJrAZtegynODkJM96nd4zEQQiEk_VbKFuBJheEY8mA4OUJcltGio3NOyL-meMbCwyEBRHNlSsbRXORHRhJhV59z7v-ij6tFyWTe_SgKwzg",
+          },
+          body: JSON.stringify({
+            to_email: email,
+            text_msg: mensagem,
+          }),
+        }
+      );
+
+      const result = await response.text();
+
+      if (response.ok) {
+        setFeedback("Mensagem enviada com sucesso!");
+        setEmail("");
+        setMensagem("");
+      } else {
+        setFeedback("Erro ao enviar: " + result);
+      }
+    } catch (error) {
+      setFeedback("Erro de rede: " + error);
+    }
+  };
 
   return (
     <>
@@ -368,12 +407,75 @@ export default function Home() {
             ainda melhor.
           </p>
         </header>
-        <form className="contact-form">
-          <input type="email" placeholder="Seu e-mail" required />
-            <input type="text" placeholder="Sua mensagem" required />
-          <Button text="Enviar Mensagem" />
-        </form>
+        <form className="contact-form" onSubmit={handleSubmit}>
+  <input
+    type="email"
+    placeholder="Seu e-mail"
+    required
+    value={email}
+    onChange={(e) => setEmail(e.target.value)}
+  />
+  <input
+    type="text"
+    placeholder="Sua mensagem"
+    required
+    value={mensagem}
+    onChange={(e) => setMensagem(e.target.value)}
+  />
+  <Button text="Enviar Mensagem" />
+  {feedback && <p style={{ marginTop: "1rem" }}>{feedback}</p>}
+</form>
       </section>
+
+     <section id="footer" className="footer-section">
+  <div className="footer-container container">
+    <div className="footer-column logo-col">
+      <h3>GALPÃO</h3>
+      <p>O sabor da brasa, a energia da galera.</p>
+    </div>
+
+    <div className="footer-column">
+      <h4>Início</h4>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#pricing">Produtos</a></li>
+        <li><a href="#testimonials">Depoimentos</a></li>
+      </ul>
+    </div>
+
+    <div className="footer-column">
+      <h4>Sobre</h4>
+      <ul>
+        <li><a href="#foryou">Experiência</a></li>
+        <li><a href="#contact">Contato</a></li>
+      </ul>
+    </div>
+
+    <div className="footer-column">
+      <h4>Suporte</h4>
+      <ul>
+        <li><a href="#contact">Ajuda</a></li>
+        <li><a href="#contact">Chat</a></li>
+      </ul>
+    </div>
+
+    <div className="footer-column social-col">
+      <div className="social-icons">
+        <a href="https://www.instagram.com/galpaoubirata/" target="_blank" rel="noreferrer">
+          <img src= {Instagram} alt="Instagram" width="24" height="24" />
+        </a>
+       
+      </div>
+    </div>
+  </div>
+
+  <div className="footer-bottom">
+    <p>&copy; {new Date().getFullYear()} Galpão - Todos os direitos reservados</p>
+  </div>
+</section>
+
+
     </>
   );
 }
+

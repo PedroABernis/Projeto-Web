@@ -33,6 +33,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 24px;
+  place-items: center;
 }
 
 .product-card {
@@ -41,10 +42,12 @@
   box-shadow: 0 4px 10px rgba(255, 0, 0, 0.1);
   overflow: hidden;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  width: 300px;
-  max-width: 100%;
+  width: 100%;
+  max-width: 300px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
 }
 
 .product-card:hover {
