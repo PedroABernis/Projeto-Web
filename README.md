@@ -1,54 +1,62 @@
-# React + TypeScript + Vite
+# 🌐 Projeto Web — Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Landing page desenvolvida como projeto de aplicação web, com foco na construção de uma interface visual, organização de componentes e apresentação de conteúdo por meio de uma página web.
 
-Currently, two official plugins are available:
+## 🎯 Objetivo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Desenvolver uma página web utilizando tecnologias modernas de desenvolvimento frontend, explorando estruturação de interfaces, organização do código e apresentação visual.
 
-## Expanding the ESLint configuration
+## 🛠️ Tecnologias utilizadas
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- React
+- TypeScript
+- Vite
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 🚀 Como executar o projeto
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Pré-requisitos
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- Node.js
+- npm
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+### Instalação
+
+1. Clone o repositório:
+
+   ```bash
+   git clone https://github.com/PedroABernis/Projeto-Web.git
+   ```
+
+2. Acesse a pasta do projeto:
+
+   ```bash
+   cd Projeto-Web
+   ```
+
+3. Instale as dependências:
+
+   ```bash
+   npm install
+   ```
+
+4. Execute a aplicação:
+
+   ```bash
+   npm run dev
+   ```
+
+5. Acesse o endereço local disponibilizado pelo Vite no terminal.
+
+## 📁 Estrutura
+
+O projeto utiliza uma estrutura frontend baseada em React e TypeScript, com configuração de desenvolvimento providenciada pelo Vite.
+
+## 📌 Status
+
+Projeto frontend / landing page.
+
+## 👨‍💻 Autor
+
+Pedro Bernis
+
+[GitHub](https://github.com/PedroABernis)
